@@ -116,33 +116,10 @@ class ProjectSection extends StatelessWidget {
                           const SizedBox(
                             height: 20.0,
                           ),
-                          projectModel.techUsed.isEmpty
-                              ? Container()
-                              : Text(
-                                  "Technologies Used",
-                                  style: GoogleFonts.josefinSans(
-                                    fontWeight: FontWeight.w900,
-                                    fontSize: 16.0,
-                                  ),
-                                ),
-                          Wrap(
-                            children: projectModel.techUsed
-                                .map((e) => Container(
-                                      margin: const EdgeInsets.all(10),
-                                      width: 25,
-                                      color:
-                                          e.logo == AppConstants.razorPayImage
-                                              ? Colors.white
-                                              : null,
-                                      height: 25,
-                                      child: Image.asset(e.logo),
-                                    ))
-                                .toList(),
-                          ),
                           const SizedBox(
                             height: 25.0,
                           ),
-                          Row(
+                          /*  Row(
                             children: [
                               MouseRegion(
                                 cursor: SystemMouseCursors.click,
@@ -174,7 +151,7 @@ class ProjectSection extends StatelessWidget {
                                 ),
                               ),
                             ],
-                          )
+                          )*/
                         ],
                       ),
                     )

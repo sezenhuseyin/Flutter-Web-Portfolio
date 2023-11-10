@@ -21,7 +21,7 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      "Mobile Application Developer",
+                      "Örnek Şirket Hizmetleri",
                       style: GoogleFonts.josefinSans(
                         color: kPrimaryColor,
                         fontWeight: FontWeight.w900,
@@ -33,7 +33,7 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                       height: 18.0,
                     ),
                     Text(
-                      "Agnel Selvan".toUpperCase(),
+                      "Örnek Şirket".toUpperCase(),
                       style: GoogleFonts.josefinSans(
                         fontSize: 40.0,
                         fontWeight: FontWeight.w900,
@@ -47,7 +47,7 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                     Row(
                       children: const [
                         Text(
-                          "Software Engineer, ",
+                          "Örnek Hizmet, ",
                           style: TextStyle(
                             color: kCaptionColor,
                             fontSize: 15.0,
@@ -66,7 +66,7 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                           width: 2,
                         ),
                         Text(
-                          "Mumbai",
+                          "İstanbul",
                           style: TextStyle(
                             color: kCaptionColor,
                             fontSize: 15.0,
@@ -94,7 +94,7 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
                             Utilty.openUrl(AppConstants.linkedInUrl);
                           },
                           child: Text(
-                            "Let's Talk",
+                            "Bize Ulaşın",
                             style: TextStyle(
                               color: Colors.grey[800],
                               fontSize: 13.0,
@@ -132,8 +132,7 @@ List<CarouselItemModel> carouselItems(double carouselContainerHeight) =>
           ),
         ),
         image: Container(
-          child:
-              SvgPicture.asset(AppConstants.guySvg, semanticsLabel: 'Guy Logo'),
+          child: Image.asset("assets/images/projects/1.JPG"),
         ),
       ),
     );

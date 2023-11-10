@@ -47,7 +47,7 @@ class _AboutSectionState extends State<AboutSection> {
                         height: 15.0,
                       ),
                       Text(
-                        "About Me",
+                        "Hakkımızda",
                         style: GoogleFonts.josefinSans(
                           fontWeight: FontWeight.w900,
                           height: 1.3,
@@ -58,7 +58,7 @@ class _AboutSectionState extends State<AboutSection> {
                         height: 25.0,
                       ),
                       Text(
-                        "I'm Agnel Selvan, A Flutter and iOS Developer and Technical Blog Writer",
+                        "Örnek Şirket Hizmetleri, Örnek Hizmetler Yapar",
                         style: GoogleFonts.josefinSans(
                           fontWeight: FontWeight.bold,
                           height: 1.3,
@@ -69,7 +69,7 @@ class _AboutSectionState extends State<AboutSection> {
                         height: 10.0,
                       ),
                       const Text(
-                        "I have done my Computer Science graduation at Xavier's Institute of Engineering on 2021. I have been developing Mobile Apps for more than 1 years now. I have worked as a Team and as an Indivual in various organization and launched the apps in Playstore as well as in Appstore. In my free time I use to write Technical Blog in Medium. Always love to learn new technologies and to succeed in an environment of growth and excellence and earn a job which provides me job satisfaction and self-development and help me achieve personal as well as organisational goals.",
+                        "Örnek şirket hizmetleri olarak yaptığımız en iyi işler örnek hizmetlerdir. Buralara uzun uzun yazılar yazarız sonrasında de bu yazıları Ertuğrul abi ve Berkan'ın düzenlemesi için bekleriz. O sürede ben oturur çay içerim. Sonra denilir hüseyin şurayı şöyle yapalım hoooopp tak diye yaparız",
                         style: TextStyle(
                           color: kCaptionColor,
                           height: 1.5,
@@ -80,7 +80,7 @@ class _AboutSectionState extends State<AboutSection> {
                         height: 20.0,
                       ),
                       const Text(
-                        "Technology I have worked with",
+                        "Anlaşmamız olan firmalar",
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
@@ -157,12 +157,15 @@ class _AboutSectionState extends State<AboutSection> {
                 if (ScreenHelper.isDesktop(context) ||
                     ScreenHelper.isTablet(context))
                   Expanded(
-                    flex: constraints.maxWidth > 720.0 ? 1 : 0,
-                    child: SvgPicture.asset(
+                      flex: constraints.maxWidth > 720.0 ? 1 : 0,
+                      child: SizedBox(
+                        width: constraints.maxWidth > 720.0 ? null : 350.0,
+                        child: Image.asset("assets/images/projects/4.JPG"),
+                      ) /* SvgPicture.asset(
                       AppConstants.personSvg,
                       width: constraints.maxWidth > 720.0 ? null : 350.0,
-                    ),
-                  ),
+                    ),*/
+                      ),
               ],
             ),
           );

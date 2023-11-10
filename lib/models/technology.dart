@@ -8,11 +8,12 @@ class TechnologyModel {
 }
 
 class TechnologyConstants {
-  static TechnologyModel python =
-      TechnologyModel("Python", AppConstants.pythonImage);
+  static TechnologyModel genclik =
+      TechnologyModel("Gençlik Durağı", "assets/images/technology/gd_logo.png");
+  static TechnologyModel earTechnic =
+      TechnologyModel("Ear Technic", "assets/images/technology/gd_logo.png");
+  /*
   static TechnologyModel php = TechnologyModel("Python", AppConstants.phpImage);
-  static TechnologyModel flutter =
-      TechnologyModel("Flutter", AppConstants.flutterImage);
   static TechnologyModel flask =
       TechnologyModel("Flask", AppConstants.flaskImage);
   static TechnologyModel firebase =
@@ -26,14 +27,16 @@ class TechnologyConstants {
   static TechnologyModel swift =
       TechnologyModel("Swift", AppConstants.swiftImage);
   static TechnologyModel sceneKit =
-      TechnologyModel("SceneKit", AppConstants.sceneKitImage);
+      TechnologyModel("SceneKit", AppConstants.sceneKitImage);*/
 
   static List<TechnologyModel> technologyLearned = [
+    genclik,
+    earTechnic /*
     flutter,
     swift,
     cPlus,
     python,
     javascript,
-    flask
+    flask*/
   ];
 }

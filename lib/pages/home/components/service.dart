@@ -12,17 +12,17 @@ import '../../../utils/screen_helper.dart';
 
 final List<DesignProcess> designProcesses = [
   DesignProcess(
-    title: "Learn",
+    title: "Öğren",
     imagePath: "assets/images/learn.png",
     subtitle: "",
   ),
   DesignProcess(
-    title: "Develop",
+    title: "Geliştir",
     imagePath: "assets/images/develop.png",
     subtitle: "",
   ),
   DesignProcess(
-    title: "Document It",
+    title: "Tasarla",
     imagePath: "assets/images/blog.png",
     subtitle: "",
   ),
@@ -32,25 +32,25 @@ class ServiceSection extends StatelessWidget {
   ServiceSection({Key? key}) : super(key: key);
   final whatIDo = [
     NameIconColor(
-      title: "Mobile App Development",
+      title: "Hızlı Destek",
       iconData: Icons.mobile_friendly,
       color: Colors.green[400]!,
     ),
     NameIconColor(
-      title: "Web Development",
+      title: "Güçlü Kurumsal Yapı",
       iconData: Icons.web,
       color: Colors.yellow[400]!,
     ),
     NameIconColor(
-      title: "Technical Blog Writer",
+      title: "Deneyimli Kadro",
       iconData: Icons.article,
       color: Colors.blue[400]!,
     ),
-    NameIconColor(
+    /*  NameIconColor(
       title: "Github Open Source",
       iconData: Icons.code,
       color: Colors.orange[400]!,
-    ),
+    ),*/
   ];
 
   @override
@@ -77,14 +77,14 @@ class ServiceSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "Productive ,\n   Experienced",
+                "Profesyonel ,\n   Güçlü",
                 style: GoogleFonts.josefinSans(
                   fontWeight: FontWeight.w900,
                   height: 1.8,
                   letterSpacing: 2,
                   fontSize: 18.0,
                 ),
-              ),
+              ), /*
               GestureDetector(
                 onTap: () {
                   Utilty.openUrl(
@@ -101,14 +101,14 @@ class ServiceSection extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
+              ),*/
             ],
           ),
           const SizedBox(
             height: 20,
           ),
           Text(
-            "What I Do?",
+            "Değerlerimiz",
             style: GoogleFonts.josefinSans(
               fontWeight: FontWeight.w900,
               height: 1.3,
@@ -119,7 +119,7 @@ class ServiceSection extends StatelessWidget {
             height: 5,
           ),
           Text(
-            "I may not be perfect, but I'm surely of some help",
+            "Güçlü Altyapımız ile Kendinize Değer Katın",
             style: GoogleFonts.josefinSans(
               color: Colors.grey[400],
               fontSize: 14.0,

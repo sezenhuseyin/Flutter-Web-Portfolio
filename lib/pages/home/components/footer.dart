@@ -9,16 +9,16 @@ import 'package:responsive_framework/responsive_framework.dart';
 final List<FooterItem> footerItems = [
   FooterItem(
       iconData: Icons.location_on,
-      title: "ADDRESS",
-      text1: "Mumbai, Maharashtra",
-      text2: "India",
+      title: "ADRES",
+      text1: "Gaziosmanpaşa, İstanbul",
+      text2: "Türkiye",
       onTap: () {
         Utilty.openMyLocation();
       }),
   FooterItem(
       iconData: Icons.phone,
-      title: "PHONE",
-      text1: "+91 9167877725",
+      title: "TELEFON",
+      text1: "+90 555 553 35 53",
       text2: "",
       onTap: () {
         Utilty.openMyPhoneNo();
@@ -26,7 +26,7 @@ final List<FooterItem> footerItems = [
   FooterItem(
       iconData: Icons.mail,
       title: "EMAIL",
-      text1: "agnelselvan007@gmail.com",
+      text1: "genclikduragi@gmail.com",
       text2: "",
       onTap: () {
         Utilty.openMail();
@@ -34,7 +34,7 @@ final List<FooterItem> footerItems = [
   FooterItem(
       iconData: Icons.sms,
       title: "WHATSAPP",
-      text1: "+91 9167877725",
+      text1: "+90 555 555 55 55",
       text2: "",
       onTap: () {
         Utilty.openWhatsapp();
@@ -141,21 +141,6 @@ Widget _buildUi(double width, BuildContext context) {
               const SizedBox(
                 height: 20.0,
               ),
-              Flex(
-                direction: Axis.horizontal,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Padding(
-                    padding: EdgeInsets.only(bottom: 8.0),
-                    child: Text(
-                      "Developed in 💛 with Flutter",
-                      style: TextStyle(
-                        color: kCaptionColor,
-                      ),
-                    ),
-                  ),
-                ],
-              )
             ],
           );
         },

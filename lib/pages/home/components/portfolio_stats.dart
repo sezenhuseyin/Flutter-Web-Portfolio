@@ -7,9 +7,9 @@ import 'package:responsive_framework/responsive_framework.dart';
 
 final List<Stat> stats = [
   // Stat(count: "43", text: "Clients"),
-  Stat(count: "5+", text: "Projects"),
-  Stat(count: "4", text: "Awards"),
-  Stat(count: "1", text: "Years\nExperience"),
+  Stat(count: "900", text: "Katılımcı"),
+  Stat(count: "5", text: "Etkinlik"),
+  Stat(count: "10", text: "Yıllık Deneyim"),
 ];
 
 class PortfolioStats extends StatelessWidget {

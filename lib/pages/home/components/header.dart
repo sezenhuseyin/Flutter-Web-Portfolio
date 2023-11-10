@@ -29,7 +29,7 @@ class HeaderLogo extends StatelessWidget {
               text: TextSpan(
                 children: [
                   TextSpan(
-                    text: "A ",
+                    text: "Örnek ",
                     style: GoogleFonts.josefinSans(
                       fontSize: 26.0,
                       fontWeight: FontWeight.bold,
@@ -40,7 +40,7 @@ class HeaderLogo extends StatelessWidget {
                     ),
                   ),
                   TextSpan(
-                    text: "Dev",
+                    text: "Şirket",
                     style: GoogleFonts.josefinSans(
                       color: kPrimaryColor,
                       fontSize: 26.0,
@@ -64,37 +64,37 @@ class HeaderRow extends StatelessWidget {
 
   static List<NameOnTap> get headerItems => [
         NameOnTap(
-          title: "Home",
+          title: "Anasayfa",
           iconData: Icons.home,
           onTap: () {},
         ),
         NameOnTap(
-          title: "About",
+          title: "Hakkımızda",
           onTap: () {},
           iconData: Icons.info,
         ),
         NameOnTap(
-          title: "Services",
+          title: "Değerler",
           onTap: () {},
           iconData: Icons.school,
         ),
         NameOnTap(
-          title: "Portfolio",
+          title: "Etkinlikler",
           onTap: () {},
           iconData: Icons.work,
         ),
         NameOnTap(
-          title: "Contact",
+          title: "İletişim",
           onTap: () {},
           iconData: Icons.contact_mail,
         ),
-        NameOnTap(
+        /*    NameOnTap(
           title: "Blogs",
           onTap: () {
             Utilty.openUrl(AppConstants.mediumUrl);
           },
           iconData: Icons.article,
-        ),
+        ),*/
         NameOnTap(
           title: "Themes",
           onTap: () {
